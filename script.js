@@ -1,5 +1,6 @@
 function moveNoButton() {
-    // No additional functionality needed for this scenario
+    document.querySelector('.no-btn').style.setProperty('--randomX', '0');
+    document.querySelector('.no-btn').style.setProperty('--randomY', '0');
 }
 
 function showLoveMessage() {
