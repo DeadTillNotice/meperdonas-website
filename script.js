@@ -1,9 +1,13 @@
-document.getElementById('noButton').addEventListener('click', function() {
-    // Button animation
-    this.style.left = '0';
-    this.style.transition = 'none';
+function moveNoButton() {
+    document.getElementById('noButton').style.transform = `translateX(${randomMovement()}px) translateY(${randomMovement()}px)`;
+}
 
-    // Change page content
+function randomMovement() {
+    return Math.random() * 50 - 25;
+}
+
+function showLoveMessage() {
     document.body.style.backgroundColor = '#ffcccb';
     document.querySelector('h1').innerText = 'I love you more';
-});
+    document.querySelector('.buttons').style.display = 'none';
+}
