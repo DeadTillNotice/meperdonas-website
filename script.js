@@ -11,7 +11,9 @@ function moveNoButton() {
 }
 
 function showLoveMessage() {
-    document.body.style.backgroundColor = '#ffcccb';
+    document.body.style.backgroundColor = '#ffd1dc'; /* Pastel pink */
     document.querySelector('.question').innerText = 'Cool cool cool, I love you paopao';
-    document.querySelector('.btn-group').style.display = 'none';
+    const btnGroup = document.querySelector('.btn-group');
+    btnGroup.style.display = 'none';
+    btnGroup.classList.add('hide');
 }
