@@ -16,7 +16,16 @@ body {
 }
 
 #noButton:hover {
-    position: relative;
-    left: 10px;
-    transition: left 0.2s;
+    animation: moveButton 1s infinite alternate;
+}
+
+@keyframes moveButton {
+    to {
+        transform: translateX(randomMovement());
+        transform: translateY(randomMovement());
+    }
+}
+
+function randomMovement() {
+    return Math.random() * 50 - 25 + 'px';
 }
