@@ -4,6 +4,6 @@ function moveNoButton() {
 
 function showLoveMessage() {
     document.body.style.backgroundColor = '#ffcccb';
-    document.querySelector('h1').innerText = 'I love you more';
+    document.querySelector('h1').innerText = 'Cool cool cool,I love you paopao';
     document.querySelector('.buttons').style.display = 'none';
 }
