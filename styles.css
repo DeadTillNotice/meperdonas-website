@@ -1,1 +1,30 @@
+body {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #fff;
+}
+
+.container {
+    text-align: center;
+}
+
+.buttons {
+    margin-top: 20px;
+}
+
+#yesButton {
+    background-color: #8FED8F; /* pastel green */
+}
+
+#noButton {
+    background-color: #FF7575; /* red */
+    transition: transform 0.5s ease-in-out;
+}
+
+#noButton:hover {
+    transform: translateX(calc(100vw * 0.8)) translateY(calc(100vh * 0.8));
+}
 
